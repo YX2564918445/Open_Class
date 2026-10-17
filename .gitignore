@@ -1,0 +1,90 @@
+# ============================================================
+# 科创扬帆系列公开课 仓库忽略规则
+# ============================================================
+
+# ---------- Keil C51 / Keil MDK 编译产物 ----------
+Objects/
+Listings/
+*.obj
+*.o
+*.rel
+*.lst
+*.m51
+*.lnp
+*.hex
+*.bin
+*.elf
+*.axf
+*.map
+*.sbr
+*.sym
+*.omf
+*.plg
+*.crf
+*.dep
+*.d
+*.iex
+*.scvd
+*.build_log.htm
+*.build_log.txt
+
+# ---------- Keil 用户界面/临时文件 ----------
+*.uvgui.*
+*.uvguix.*
+*.bak
+*.Bak
+*.backup
+*.tmp
+*.__i
+*.SBR
+*.LST
+
+# ---------- 嘉立创 EDA / 硬件设计产物 ----------
+# 工程源文件（.epro 等）应当提交，以下仅忽略导出与临时文件
+Project Outputs/
+*.gbrjob
+*.gbr
+*.drl
+*.nc
+*.history/
+*_bak/
+*备份*
+~$*
+*.lck
+
+# ---------- STM32 / 嵌入式通用产物 ----------
+Debug/
+Release/
+DebugConfig/
+RTE/
+*.su
+*.d
+*.o
+*.a
+*.crf
+*.dep
+arm-none-eabi-*
+JLinkLog.txt
+JLinkSettings.ini
+*.svd
+*.ioc.bak
+
+# ---------- 操作系统 ----------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# ---------- 编辑器 / IDE ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.code-workspace
+
+# ---------- 日志与压缩包 ----------
+*.log
+*.zip
+*.rar
+*.7z
