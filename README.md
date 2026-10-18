@@ -36,6 +36,7 @@ Open_Class/
 | 1 | [1First_LED](51_Project/1First_LED/) | [第 1 讲](51_Course/01_Keil新建工程与程序下载.md) | 点亮 LED、LED 交替亮灭 | GPIO 输出、共阳极接法、`sbit` 位定义 |
 | 2 | [2Waterfall_Light](51_Project/2Waterfall_Light/) | [第 2 讲](51_Course/02_流水灯.md) | 流水灯 | 移位运算、端口整体赋值、延时函数 |
 | 3 | [3Key_LED](51_Project/3Key_LED/) | [第 3 讲](51_Course/03_按键控制LED.md) | 按键控制 LED | GPIO 输入、按键扫描、软件消抖 |
+| 4 | [4Nixie](51_Project/4Nixie/) | [第 4 讲](51_Course/04_数码管.md) | 8 位数码管显示 | 共阴段码、74HC138 位选、动态扫描与消隐 |
 | 5 | [5Buzzer](51_Project/5Buzzer/) | [第 5 讲](51_Course/05_蜂鸣器.md) | 按键控制蜂鸣器 | 蜂鸣器驱动、频率控制、多文件模块化编程 |
 | 6 | [6Motor](51_Project/6Motor/) | [第 6 讲](51_Course/06_直流电机.md) | 按键控制直流电机转速 | 电机驱动、PWM 与占空比、`Delay_10us` 软件 PWM |
 
@@ -77,6 +78,6 @@ Open_Class/
 ## 后续计划
 
 - [x] 51 单片机基础例程
-- [ ] 51 单片机课程讲义补全
+- [x] 51 单片机课程讲义补全
 - [ ] 嘉立创 EDA 电路设计与 PCB 教程
 - [ ] STM32 入门与综合实践教程

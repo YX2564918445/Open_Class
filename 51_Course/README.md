@@ -9,6 +9,7 @@
 | 第 1 讲 | [Keil 新建工程与程序下载](01_Keil新建工程与程序下载.md) | [1First_LED](../51_Project/1First_LED/) | 开发板与 Keil 环境、新建工程、编译、STC-ISP 下载、点亮 LED |
 | 第 2 讲 | [流水灯](02_流水灯.md) | [2Waterfall_Light](../51_Project/2Waterfall_Light/) | 数制与位运算、LED 电路、移位流水灯、延时函数 |
 | 第 3 讲 | [按键控制 LED](03_按键控制LED.md) | [3Key_LED](../51_Project/3Key_LED/) | 准双向口、按键电路、软件消抖、状态翻转 |
+| 第 4 讲 | [数码管](04_数码管.md) | [4Nixie](../51_Project/4Nixie/) | 共阴数码管、段码、74HC138 位选、动态扫描与消隐、多文件工程 |
 | 第 5 讲 | [蜂鸣器](05_蜂鸣器.md) | [5Buzzer](../51_Project/5Buzzer/) | 多文件模块化、无源蜂鸣器、方波与频率、`Delay_10us` |
 | 第 6 讲 | [直流电机](06_直流电机.md) | [6Motor](../51_Project/6Motor/) | ULN2003 驱动、PWM 调速、占空比、`static` 状态保持 |
 
