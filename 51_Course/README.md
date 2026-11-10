@@ -12,6 +12,9 @@
 | 第 4 讲 | [数码管](04_数码管.md) | [4Nixie](../51_Project/4Nixie/) | 共阴数码管、段码、74HC138 位选、动态扫描与消隐、多文件工程 |
 | 第 5 讲 | [蜂鸣器](05_蜂鸣器.md) | [5Buzzer](../51_Project/5Buzzer/) | 多文件模块化、无源蜂鸣器、方波与频率、`Delay_10us` |
 | 第 6 讲 | [直流电机](06_直流电机.md) | [6Motor](../51_Project/6Motor/) | ULN2003 驱动、PWM 调速、占空比、`static` 状态保持 |
+| 第 7 讲 | [矩阵按键](07_矩阵按键.md) | [7MatrixKey](../51_Project/7MatrixKey/) | 4×4 矩阵键盘、行扫描、数码管显示缓冲区、左移溢出、键值映射 |
+| 第 8 讲 | [外部中断 0](08_外部中断0.md) | [8ExternalINT0](../51_Project/8ExternalINT0/) | 中断概念、TCON/IE、下降沿触发、ISR 编写、流水灯 |
+| 第 9 讲 | [外部中断 1](09_外部中断1.md) | [9ExternalINT1](../51_Project/9ExternalINT1/) | 低电平触发、反复进入 ISR、秒表、数码管计时、ISR 冻结 main |
 
 ## 编写约定
 
