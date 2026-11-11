@@ -1,0 +1,198 @@
+/* 51_Course PDF 样式 —— 按 pdf/01~06 现有六份 PDF 逆向量取的实测值重建
+   单位一律用 pt，与 PDF 内部坐标一致（1pt = 1/72 inch）
+   字体：MicrosoftYaHei / MicrosoftYaHei-Bold / Consolas
+*/
+
+@page {
+    size: A4;
+    margin: 32mm 15.88mm 19.3mm 15.88mm;   /* 上 32mm 留给 logo，左右 45pt，下 19.3mm */
+}
+
+/* ---------- 正文 ---------- */
+body {
+    font-family: "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    font-size: 10.5pt;
+    line-height: 18pt;          /* 实测行距 18pt = 1.714em */
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+p {
+    margin: 0 0 6pt 0;          /* 段间距 24pt = 18 行距 + 6 间距 */
+    color: #1a1a1a;
+}
+
+strong, b { font-weight: bold; color: inherit; }
+em { font-style: italic; }
+
+a {
+    color: #0b5cad;
+    text-decoration: none;
+}
+
+/* ---------- 标题 ---------- */
+h1 {
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 21pt;
+    font-weight: bold;
+    color: #1a1a1a;
+    text-align: center;
+    line-height: 1.32;
+    margin: 0 0 22pt 0;
+    padding: 0;
+    border: none;
+}
+
+h2 {
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 15pt;
+    font-weight: bold;
+    color: #1a1a1a;
+    line-height: 1.3;
+    margin: 22pt 0 10pt 0;
+    padding: 0 0 6pt 0;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+h3 {
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 12.5pt;
+    font-weight: bold;
+    color: #1a1a1a;
+    line-height: 1.35;
+    margin: 18pt 0 8pt 0;
+    padding: 0;
+    border: none;
+}
+
+h4 {
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 10.5pt;
+    font-weight: bold;
+    color: #1a1a1a;
+    line-height: 1.4;
+    margin: 14pt 0 6pt 0;
+    border: none;
+}
+
+h5, h6 {
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 10.5pt;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin: 12pt 0 6pt 0;
+}
+
+/* ---------- 引用块（讲次信息栏） ---------- */
+blockquote {
+    margin: 0 0 9pt 0;
+    padding: 9pt 12pt;
+    background-color: #faf7f1;
+    border-left: 3px solid #d19952;
+    color: #333333;
+}
+blockquote p {
+    margin: 0 0 3pt 0;
+    color: #333333;
+}
+blockquote p:last-child { margin-bottom: 0; }
+blockquote strong { color: #333333; font-weight: bold; }
+blockquote a { color: #0b5cad; }
+blockquote code { color: #333333; }
+
+/* ---------- 表格 ---------- */
+table {
+    border-collapse: collapse;
+    table-layout: fixed;        /* 现有六份 PDF 的表格列宽等分，不随内容伸缩 */
+    width: 100%;
+    margin: 8pt 0 8pt 0;
+    font-size: 9pt;
+    color: #1a1a1a;
+}
+th, td {
+    border: 1px solid #d0d6de;
+    padding: 5pt 6.5pt;
+    line-height: 1.5;
+    vertical-align: top;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+th {
+    background-color: #f1f4f6;
+    font-weight: bold;
+    text-align: center;
+}
+td { text-align: left; }
+tbody tr { background-color: #ffffff; }
+
+/* ---------- 代码 ---------- */
+pre {
+    background-color: #f5f7fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 2pt;
+    padding: 8pt 10.5pt;
+    margin: 8pt 0 8pt 0;
+    font-size: 8.5pt;
+    line-height: 1.6;
+    color: #1a1a1a;
+    overflow-x: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    page-break-inside: avoid;
+}
+pre code,
+pre code span,
+pre code * {
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 8.5pt;
+    line-height: 1.6;
+    color: #1a1a1a !important;   /* 关闭语法着色，现有六份 PDF 代码为单色 */
+    background: transparent !important;
+    padding: 0;
+    border: none;
+}
+
+code {
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 90%;
+    background-color: #f0f1f5;
+    color: inherit;
+    padding: 0.5pt 2.5pt;
+    border-radius: 2pt;
+    border: none;
+}
+
+/* ---------- 列表 ---------- */
+ul, ol {
+    margin: 6pt 0 6pt 0;
+    padding-left: 17pt;
+    color: #1a1a1a;
+}
+li {
+    margin: 0 0 3pt 0;
+    line-height: 18pt;
+}
+li > p { margin: 0; }
+ul ul, ul ol, ol ul, ol ol {
+    margin: 3pt 0 3pt 0;
+}
+li::marker { color: #1a1a1a; }
+
+/* ---------- 分隔线 ---------- */
+hr {
+    border: none;
+    border-top: 1px solid #d8d8d8;
+    margin: 14pt 0;
+    height: 0;
+    background: none;
+}
+
+/* ---------- 图片 ---------- */
+img { max-width: 100%; }
+
+/* ---------- 分页控制 ---------- */
+h1, h2, h3, h4 { page-break-after: avoid; }
+table, blockquote { page-break-inside: avoid; }
