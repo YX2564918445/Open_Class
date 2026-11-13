@@ -22,3 +22,15 @@
 - 图片存放于 `assets/` 目录，使用相对路径引用，例如 `![接线图](assets/led-接线图.png)`；
 - 代码块标注语言：` ```c `；
 - 讲义中的代码应与 [51_Project/](../51_Project/) 中对应例程保持一致，修改例程时同步更新讲义。
+
+## 生成 PDF
+
+讲义正文只维护 Markdown，PDF 在本地生成、不提交进仓库：
+
+```bash
+cd 51_Course
+python build_pdf.py --all              # 全部重新生成
+python build_pdf.py 07_矩阵按键.md      # 只生成指定讲义
+```
+
+产物输出到 `pdf/`，样式定义在 [pdf-style.css](pdf-style.css)，与已发布的前六份保持同一版式。依赖与用法详见[根目录 README](../README.md#讲义-pdf)。

@@ -97,3 +97,7 @@ node_modules/
 
 # ---------- PPT 本地工作区 ----------
 _ppt_work/
+
+# ---------- Python 构建缓存 ----------
+__pycache__/
+*.pyc

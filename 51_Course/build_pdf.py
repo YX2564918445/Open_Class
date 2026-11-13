@@ -90,7 +90,7 @@ def main(argv):
         print(__doc__)
         return 1
     if argv[1] == "--all":
-        targets = sorted(BASE.glob("*.md"))
+        targets = [p for p in sorted(BASE.glob("*.md")) if p.name != "README.md"]
     else:
         targets = [BASE / a for a in argv[1:]]
     for md in targets:
