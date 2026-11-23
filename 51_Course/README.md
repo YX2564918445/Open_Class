@@ -15,6 +15,9 @@
 | 第 7 讲 | [矩阵按键](07_矩阵按键.md) | [7MatrixKey](../51_Project/7MatrixKey/) | 4×4 矩阵键盘、行扫描、数码管显示缓冲区、左移溢出、键值映射 |
 | 第 8 讲 | [外部中断 0](08_外部中断0.md) | [8ExternalINT0](../51_Project/8ExternalINT0/) | 中断概念、TCON/IE、下降沿触发、ISR 编写、流水灯 |
 | 第 9 讲 | [外部中断 1](09_外部中断1.md) | [9ExternalINT1](../51_Project/9ExternalINT1/) | 低电平触发、反复进入 ISR、秒表、数码管计时、ISR 冻结 main |
+| 第 10 讲 | [定时器 0 与数码管秒表](10_定时器秒表.md) | [10TimerStopwatch](../51_Project/10TimerStopwatch/) | 定时器原理、TMOD/TCON、10 ms 初值、模式 1 重装、软件分频凑 0.1 秒、`volatile` 与临界区 |
+| 第 11 讲 | [定时器做 PWM 与呼吸灯](11_定时器PWM与呼吸灯.md) | [11BreathingLED](../51_Project/11BreathingLED/) | 100 µs 节拍、占空比比较、中断时间预算、一个定时器派生多个节拍 |
+| 第 12 讲 | [串口通信](12_串口通信.md) | [12SerialLED](../51_Project/12SerialLED/) | 帧格式与波特率、定时器 1 模式 2 分频、`interrupt 4` 收发共用、判帧、临界区 |
 
 ## 编写约定
 
